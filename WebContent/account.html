@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New-Account</title>
+</head>
+<style>
+body{
+background: rgb(240,240,240);
+background: radial-gradient(circle, rgba(240,240,240,1) 29%, rgba(160,214,135,1) 52%);
+}
+.btn
+{
+  padding: 15px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  background-color: #d1cfcf;
+}
+
+.btn:hover {
+  background-color: #ffffff; 
+  color:green;
+}
+
+.bg{
+
+  width: 280px;
+ border-radius: 25px;
+  border: 15px   ;
+  padding: 50px;
+  margin: 20px;
+background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 29%, rgba(223,223,223,1) 52%);
+
+}
+.btn
+{
+  padding: 15px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  background-color: #9e9b9b;
+}
+
+.btn:hover {
+  background-color: #ffffff; 
+  color:green;
+}
+</style>
+<body>
+<form action="./newacc" method="post">
+<center>
+<h3><i>NEW ACCOUNT FORM</i></h3>
+<div class=bg>
+<p>Account_No.:</p>
+<input type="text" name="id"/>
+<br/>
+<p>Username:</p>
+<input type="text" name="username"/>
+<br/>
+<p>Amount:</p>
+<input type="text" name="balance"/>
+<br>
+<p>Address:</p>
+<input type="text" name="address"/>
+<br>
+<p>Mobile_no.:</p>
+<input type="tel"pattern="[0-9]{10}" name="phoneno"/>
+<br><br>
+<input type="submit" Value="Create" class="btn">
+<input type="reset" Value="Reset" class="btn">
+</center>
+</div>
+</form>
+</body>
+</html>
